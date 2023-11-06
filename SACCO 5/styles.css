@@ -1,0 +1,94 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Animated text */
+.animated-text {
+    animation: fadeInUp 2s ease-in-out;
+    color: blue;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Background images */
+#home {
+    background-image: url('images/savings-background.jpg');
+    background-size: cover;
+    height: 80vh;
+}
+
+#about {
+    background-image: url('images/contact-background.jpg');
+    background-size: cover;
+}
+
+#contact {
+    background-image: url('images/');
+    background-size: cover;
+}
+
+#services {
+    background-image: url('images/');
+    background-size: cover;
+}
+
+#membership {
+    background-image: url('membership-bg.jpg');
+    background-size: cover;
+}
